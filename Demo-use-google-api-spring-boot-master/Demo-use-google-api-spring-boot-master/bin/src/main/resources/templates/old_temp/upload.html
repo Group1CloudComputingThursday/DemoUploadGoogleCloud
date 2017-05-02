@@ -1,0 +1,37 @@
+<html>
+<head>
+
+<title>Demo upload và download</title>
+
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+	<div th:replace="include/header :: header1"></div>
+
+	<div>
+		<div th:if="${message}">
+		<h2 th:text="${message}"/>
+		</div>
+		<form method="POST" enctype="multipart/form-data" action="upload">
+			<div class="col-lg-6 col-sm-6 col-12">
+				<h4>Input Groups</h4>
+				<div class="input-group">
+					<label class="input-group-btn"> <span
+						class="btn btn-primary"> Browse&hellip; <input type="file"
+							style="display: none;" multiple='multiple' name="file"></input>
+					</span>
+					</label> <input type="text" class="form-control" readonly="readonly"></input>
+				</div>
+			</div>
+			<button type="submit" class="btn btn-success">Upload</button>
+		</form>
+	</div>
+
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="js/myscript.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Demo upload  download</title>
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+
+	<div th:replace="include/header :: header1"></div>
+	<div>
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>File name</th>
+					<th>File ID</th>
+					<th>Download</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="list : ${list}">
+					<td><a th:text="${list.getTitle()}" ></a></td>
+					<td><a th:text="${list.getId()}" ></a></td>
+					<td><a th:href="@{'download/'+${list.getId()}}">Link</a></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

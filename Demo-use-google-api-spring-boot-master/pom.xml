@@ -50,6 +50,7 @@
 			<artifactId>mysql-connector-java</artifactId>
 		</dependency>
 
+		
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>jstl</artifactId>
@@ -113,6 +114,18 @@
 		</dependency>
 
 
+<!-- https://mvnrepository.com/artifact/com.google.cloud.sql/mysql-socket-factory-core -->
+		<dependency>
+			<groupId>com.google.cloud.sql</groupId>
+			<artifactId>mysql-socket-factory-core</artifactId>
+			<version>1.0.2</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.google.cloud.sql/mysql-socket-factory-connector-j-6 -->
+		<dependency>
+			<groupId>com.google.cloud.sql</groupId>
+			<artifactId>mysql-socket-factory-connector-j-6</artifactId>
+			<version>1.0.2</version>
+		</dependency>
 
 
 		<dependency>
